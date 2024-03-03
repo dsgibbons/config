@@ -18,3 +18,5 @@ source <(kubectl completion bash)
 complete -o default -F __start_kubectl k
 export do="--dry-run=client -o yaml"
 export now="--grace-period 0 --force"
+alias kka="kubectl kustomize | kubectl apply -f -"
+alias kkd="kubectl kustomize | kubectl delete -f -"
