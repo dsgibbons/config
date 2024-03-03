@@ -1,6 +1,6 @@
-alias d=docker
+alias d="docker"
 alias dc="docker compose"
-alias dokcer=docker
+alias dokcer="docker"
 
 alias g="git"
 alias gb="git branch"
@@ -11,9 +11,9 @@ alias gc="git commit"
 alias gcm="git commit -m"
 alias gp="git push"
 
-alias k=kubectl
+alias k="kubectl"
 alias ke="kubectl explain"
-export do="--dry-run=client -o yaml"
-export now="--grace-period 0 --force"
 source <(kubectl completion bash)
 complete -o default -F __start_kubectl k
+export do="--dry-run=client -o yaml"
+export now="--grace-period 0 --force"
